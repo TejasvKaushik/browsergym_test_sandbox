@@ -1,0 +1,9 @@
+browsergym
+browsergym-experiments
+browsergym-core
+browsergym-miniwob
+browsergym-webarena
+browsergym-visualwebarena
+browsergym-workarena
+browsergym-assistantbench
+weblinx-browsergym
