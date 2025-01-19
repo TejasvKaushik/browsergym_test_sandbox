@@ -42,7 +42,7 @@ async function startGame() {
     if (!resetSuccess) return;
 
     isGameRunning = true;
-    alert("Game Started!");
+    document.getElementById("status").textContent = "Start on the icy surface 🥶🥶🥶";
 }
 
 async function resetGame() {
@@ -108,9 +108,9 @@ async function sendAction(action) {
 
             // Update the status message
             if (slipped) {
-                document.getElementById("status").textContent = "Slipped!";
+                document.getElementById("status").textContent = "HAHAHAHAHAH! You Slipped!! 🤣🤣🤣";
             } else {
-                document.getElementById("status").textContent = "Not Slipped";
+                document.getElementById("status").textContent = "One step closer to the target 😮😮😮";
             }
 
             // Update current position
@@ -120,7 +120,7 @@ async function sendAction(action) {
         // Check if the game is over
         if (data.done) {
             isGameRunning = false;
-            alert("Game Over!");
+            document.getElementById("status").textContent = "GAME OVER!";
         }
     } catch (error) {
         console.error("Error during fetch:", error);
